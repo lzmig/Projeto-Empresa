@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nome": "Prato Feito Tradicional",
+        "descricao": "Arroz, feijão, bife grelhado, batata frita e salada.",
+        "preco": 24.9,
+        "imagem": "assets/images/comidas/imgPrincipal.png"
+    },
+    {
+        "id": 2,
+        "nome": "Frango Caseiro",
+        "descricao": "Frango dourado, arroz soltinho, feijão e farofa.",
+        "preco": 22.9,
+        "imagem": "assets/images/comidas/imgPrincipal.png"
+    },
+    {
+        "id": 3,
+        "nome": "Macarrão da Casa",
+        "descricao": "Macarrão ao molho caseiro com carne moída e queijo ralado.",
+        "preco": 19.9,
+        "imagem": "assets/images/comidas/imgPrincipal.png"
+    },
+    {
+        "id": 4,
+        "nome": "Feijoada Completa",
+        "descricao": "Feijoada com carnes selecionadas, arroz, couve e laranja.",
+        "preco": 29.9,
+        "imagem": "assets/images/comidas/imgPrincipal.png"
+    },
+    {
+        "id": 5,
+        "nome": "Omelete Recheado",
+        "descricao": "Omelete com queijo, presunto e temperos caseiros.",
+        "preco": 17.9,
+        "imagem": "assets/images/comidas/imgPrincipal.png"
+    }
+]
