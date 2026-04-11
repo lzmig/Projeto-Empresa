@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabor do Bairro</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
+    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/sobrenos.css">
+    <script src="scripts/sobrenos.js" defer></script>
 </head>
 
 <body>
@@ -20,12 +27,94 @@
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobrenos.html">Sobre nós</a></li>
                 <li><a href="novidades.html">Novidades</a></li>
-                <footer>
-                    <p class="footernavbar">&copy; 2026 Sabor do Bairro. Todos os direitos reservados.</p>
-                </footer>
-            </ul>
+
         </nav>
+        <main>
+            <section class="container-sobre">
+                <div class="textosobre">
+                    <h1 class="titulodestaque">
+                        Sobre <em id="destaque">nossa</em> empresa
+                    </h1>
+                    <p class="textohistoria">
+
+                        No coração da Tijuca nasceu o Sabor do Bairro, que começou como uma simples pensão na casa de
+                        Dona Maria. Com poucas mesas e comida caseira, o lugar rapidamente conquistou os moradores pela
+                        qualidade e pelo acolhimento.
+                        Com o passar dos anos, a fama cresceu e ultrapassou a Tijuca, se espalhando por todo o Rio de
+                        Janeiro. O pequeno espaço já não comportava tantos clientes, e a pensão deu lugar a um
+                        restaurante maior.
+                        Hoje, o Sabor do Bairro é referência, mas continua com a mesma essência: comida feita com
+                        carinho e aquele verdadeiro gosto de casa.
+
+                    </p>
+                </div>
+                <img class="imgTexto" src="assets/images/imgRestaurante/imgRestaurante.jpeg" alt="">
+
+            </section>
+
+            <div class="container-slide">
+
+            </div>
+
+            <!parte do slide------------------------------------------------------------------------------------------------------------------>
+
+            <div class="container-slide">
+                <div class="slide-track-wrap">
+                    <div class="slide-track" id="slideTrack"></div>
+                </div>
+            </div>
+
+            <!------------------------------------------------------------------------------------------------------------------>
+
+            <section class="containerchef">
+
+                <img class="imgchef" src="assets/images/imgRestaurante/Chefs.jpg" alt="">
+
+
+                <div class="chefs">
+
+                    <h1 class="titulodestaque">Chefs do <br><em id="destaque">Bairro</h1>
+                </div>
+
+
+                <h2 class="chefs">
+                    🧑🏽‍🍳 <em id="destaquechef">Chef</em> Guilherme
+                </h2>
+                <h2 class="chefs">
+                    🍴 <em id="destaquechef">Chef</em> Marcus
+                </h2>
+                <h2 class="chefs">
+                    🔪 <em id="destaquechef">Chef</em> Hugo
+                </h2>
+                <h2 class="chefs">
+                    🥩 <em id="destaquechef">Chef</em> Miguel
+                </h2>
+                
+            </section>
+
+
+
+            <section class="containerloc">
+
+                <h1 class="tituloloc">Local</h1>
+                <h2 class="subtext-loc">
+                    R. Ibituruna, 108 - Maracanã, Rio de Janeiro - RJ, 20271-110
+                </h2>
+
+                <div class="maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.042237329596!2d-43.22133470000001!3d-22.9118129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e57963eedf3%3A0xaf52199fd71ffebb!2sUniversidade%20Veiga%20de%20Almeida%20-%20Campus%20Tijuca!5e0!3m2!1spt-BR!2sbr!4v1775824231335!5m2!1spt-BR!2sbr"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+            
+        </main>
+        </ul>
+
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     </header>
-            </body>
-            </html>
+</body>
+
+</html>
