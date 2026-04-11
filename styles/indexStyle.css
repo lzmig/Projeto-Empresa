@@ -164,10 +164,7 @@ body {
     text-decoration: none;
     color: var(--branco);
     font-weight: bold;
-
-
     transition: all 0.5s ease;
-
 }
 
 #btnCardapio {
@@ -257,7 +254,6 @@ body {
 #btnCardapioCompleto {
     margin: 38.4px;
     background-color: var(--corPrincipal);
-    
 }
 
 #btnCardapioCompleto:hover {
@@ -281,29 +277,57 @@ body {
     width: 100%;
     margin: auto;
     background-color: var(--fundo);
+    padding-bottom: 50px;
+}
+
+.carrossel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 10px;
+    overflow: hidden;
 }
 
 .diferenciais {
+    position: relative;
+    height: 430px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin: 30px;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .cardDiferencial {
-    max-width: 600px;
-    width: 100%;
-    height: 250px;
+    position: absolute;
+    width: 500px;
+    height: 340px;
     background-color: var(--branco);
     border-radius: 20px;
-    padding: 25px;
-    margin: 15px;
+    padding: 35px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.425);
     display: flex;
     flex-direction: column;
     gap: 15px;
     justify-content: center;
+    transition: all 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+}
 
+.cardDiferencial.ativo {
+    border: 2px solid var(--corPrincipal);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.30);
+    cursor: default;
+    bottom: 1rem;
+}
+
+.cardDiferencial.lateral {
+    opacity: 0.55;
+}
+
+.cardDiferencial.longe {
+    opacity: 0.25;
 }
 
 .caixaIcone {
@@ -324,7 +348,7 @@ body {
 .tituloDiferencial {
     font-family: 'Koh Santepheap', serif;
     font-weight: bold;
-    font-size: 26px;
+    font-size: 30px;
     text-align: left;
     margin: 0;
 }
@@ -333,8 +357,37 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: var(--textoSecundario);
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     margin: 0;
+    line-height: 1.5;
+}
+
+.botoesCarrossel {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btnCarrossel {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--corPrincipal);
+    background: transparent;
+    color: var(--corPrincipal);
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btnCarrossel:hover {
+    background: var(--corPrincipal);
+    color: var(--branco);
 }
 
 @keyframes fadeUp {
