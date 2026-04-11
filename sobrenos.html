@@ -5,30 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sabor do Bairro</title>
-    <link href=link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/sobrenos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="scripts/menu.js" defer></script>
     <script src="scripts/sobrenos.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <div class="logo">Sabor do Bairro</div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="sobrenos.html">Sobre nós</a></li>
-                <li><a href="novidades.html">Novidades</a></li>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div>
 
+            <a href="index.html" class="logo-nav-mobile">
+                <img src="assets/images/logo.png" alt="Logo Sabor do Bairro">
+            </a>
+
+            <ul class="menu" id="menu">
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li class="logo-gap"></li>
+                <li><a href="index.html"><img src="assets/images/logo.png" alt="Logo Sabor do Bairro" class="logo"></a>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="novidades.html">Novidades</a></li>
+            </ul>
         </nav>
+
+        <ul class="menu-mobile" id="menuMobile">
+            <a href="index.html" class="logo-menu-mobile">
+                <img src="assets/images/logo.png" alt="Logo Sabor do Bairro">
+            </a>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobrenos.html">Sobre nós</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <footer>
+                <p class="footernavbar">&copy; 2026 Sabor do Bairro. Todos os direitos reservados.</p>
+            </footer>
+        </ul>
+
+        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    </header>
         <main>
             <section class="container-sobre">
                 <div class="textosobre">
@@ -111,10 +133,6 @@
             </section>
             
         </main>
-        </ul>
-
-        <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-    </header>
 </body>
 
 </html>

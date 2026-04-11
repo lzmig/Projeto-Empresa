@@ -1,8 +1,3 @@
-function toggleMenu() {
-  document.getElementById('menu').classList.toggle('aberto');
-  document.getElementById('overlay').classList.toggle('ativo');
-}
-
 const slides = [
   { img: "assets/images/imgRestaurante/salao-principal.png", label: "Salão Principal" },
   { img: "assets/images/imgRestaurante/bar.png",             label: "Bar" },
