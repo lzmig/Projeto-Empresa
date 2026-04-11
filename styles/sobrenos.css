@@ -1,0 +1,337 @@
+/* deixei essas observações tanto para mim quanto para meus colegas de grupo nao se perderem no codigo===========================================================================================================================*/
+/* estilo da pagina===========================================================================================================================*/
+:root {
+    --corPrincipal: #be430a;
+    --corSecundaria: #c0948057;
+    --fundo: #F4E9D8;
+    --branco: #FFFFFF;
+    --textoPrincipal: #181818;
+    --textoSecundario: #494949;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #F4E9D8;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #F4E9D8;
+    padding: 20px 25px;
+}
+
+.menu-toggle {
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ECA158;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 260px;
+    background-color: #222;
+    z-index: 200;
+    list-style: none;
+    padding-top: 60px;
+    border-radius: 0 15px 15px 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.menu.aberto {
+    transform: translateX(0);
+}
+
+.menu li a {
+    display: block;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #ECA158;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+.overlay.ativo {
+    display: block;
+}
+
+/* Parte principal da pagina sobre===========================================================================================================================*/
+
+.container-sobre{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    gap: 40px;
+    display: flex;
+}
+.titulodestaque{
+    font-family:'Koh Santepheap' ;
+    font-size: 52px;
+    border-left: 5px solid #be430a;
+    border-radius: 4px;
+    padding-left: 5px;
+
+}
+#destaque{
+    font-size: 60px;
+    color: #be430a;
+    font-family: "popins";
+}
+.barra{
+    border-left: red;
+}
+/* animação do delay===========================================================================================================================*/
+    @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ /* Parte dos Chefs e nossos nomes===========================================================================================================================*/
+.imgTexto{
+    max-width: 500px;
+    border-radius: 70px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 0.2s;
+}
+main{
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 0.2s;
+}
+.containerchef{
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    gap: 10px;
+    display: flex;
+    background-color:#c0948057 ;
+    border-radius: 20px;
+    
+    
+}
+
+.chefs{
+    font-size: 30px;
+    color: black;
+
+}
+#destaquechef{
+    font-size: 30px;
+    color: #be430a;
+}
+
+.imgchef{
+    max-width: 500px;
+    border-radius: 70px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+    animation-delay: 0.2s;
+}
+/* tudo da parte do mapa===========================================================================================================================*/
+
+.containerloc {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.maps {
+  display: flex;
+  justify-content: center;
+}
+
+.maps iframe {
+  border-radius: 10px;
+  width: 50%;
+  height: 350px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+ 
+.tituloloc{
+    margin-top: 100px;
+    font-family:'Koh Santepheap' ;
+    font-size: 52px;
+    color: #181818;
+    border-left: 5px solid #be430a ;
+    border-radius: 4px;
+    padding-left: 5px;
+}
+.subtext-loc{
+    font-size: 30px;
+    color: black;
+}
+
+.container-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+/*toda parte do css dos slides===========================================================================================================; */
+
+.slide-track-wrap {
+  width: 100%;
+  overflow: hidden;
+  background: #be430a;
+  padding: 18px 0;
+}
+
+.slide-track {
+  display: flex;
+  gap: 20px;
+  width: max-content;
+  will-change: transform;
+}
+
+.slide-track:hover {
+  animation-play-state: paused;
+}
+
+.slide-card {
+  border-radius: 70px;
+  width: 500px;
+  height: 350px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 290px;
+  object-fit: cover;
+  border-radius: 70px 70px 0 0;
+  display: block;
+}
+
+.slide-card .label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #be430a;
+  text-align: center;
+  padding: 10px;
+  background: #F4E9D8;
+}
+
+
+ /* formatação para celular============================================================================================================================*/
+
+
+@media (max-width: 768px) {
+
+  /* sobre */
+  .container-sobre {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px;
+  }
+
+  .imgTexto {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .titulodestaque {
+    font-size: 32px;
+  }
+
+  #destaque {
+    font-size: 38px;
+  }
+
+  .textohistoria {
+    font-size: 14px;
+  }
+
+  /* slides======================================================================================================================================== */
+  .container-slide {
+    padding: 20px 0;
+  }
+
+  .slide-card {
+    width: 260px;
+    height: 200px;
+    border-radius: 30px;
+  }
+
+  .slide-card img {
+    height: 155px;
+    border-radius: 30px 30px 0 0;
+  }
+
+  /* chefs================================================================================================================================================ */
+  .containerchef {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 16px;
+    text-align: center;
+  }
+
+  .imgchef {
+    max-width: 100%;
+    border-radius: 30px;
+  }
+
+  .chefs {
+    font-size: 20px;
+  }
+
+  /* mapa============================================================================================================================================== */
+  .containerloc {
+    padding: 30px 16px;
+  }
+
+  .tituloloc {
+    margin-top: 40px;
+    font-size: 36px;
+  }
+
+  .subtext-loc {
+    font-size: 16px;
+  }
+
+  .maps iframe {
+    width: 100%;
+    height: 250px;
+  }
+}
