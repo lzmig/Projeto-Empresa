@@ -1,3 +1,4 @@
+// pratos random
 fetch("assets/cardapio.json")
     .then(res => res.json())
     .then(cardapio => {
@@ -22,6 +23,7 @@ fetch("assets/cardapio.json")
 
     });
 
+//carrossel diferenciais
 var cardAtual = 0;
 
 function atualizarCarrossel() {

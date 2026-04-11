@@ -1,8 +1,9 @@
 //============================== CONTATO ===================================//
 function toggleMenu() {
-    document.getElementById('menu').classList.toggle('aberto');
+    document.getElementById('menuMobile').classList.toggle('aberto');
     document.getElementById('overlay').classList.toggle('ativo');
 }
+
 function enviarFormulario() {
     const nome = document.getElementById('nome').value.trim();
     const email = document.getElementById('email').value.trim();

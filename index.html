@@ -20,19 +20,37 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <div class="logo">Sabor do Bairro</div>
+            <div class="menu-toggle" id="menuToggle" onclick="toggleMenu()">☰</div>
+
+            <a href="index.html" class="logo-nav-mobile">
+                <img src="assets/images/logo.png" alt="Logo Sabor do Bairro">
+            </a>
+
             <ul class="menu" id="menu">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="contato.html">Contato</a></li>
                 <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li class="logo-gap"></li>
+                <li><a href="index.html"><img src="assets/images/logo.png" alt="Logo Sabor do Bairro" class="logo"></a>
+                </li>
+                <li><a href="contato.html">Contato</a></li>
                 <li><a href="novidades.html">Novidades</a></li>
-                <footer>
-                    <p class="footernavbar">&copy; 2026 Sabor do Bairro. Todos os direitos reservados.</p>
-                </footer>
             </ul>
         </nav>
+
+        <ul class="menu-mobile" id="menuMobile">
+            <a href="index.html" class="logo-menu-mobile">
+                <img src="assets/images/logo.png" alt="Logo Sabor do Bairro">
+            </a>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="sobrenos.html">Sobre nós</a></li>
+            <li><a href="novidades.html">Novidades</a></li>
+            <footer>
+                <p class="footernavbar">&copy; 2026 Sabor do Bairro. Todos os direitos reservados.</p>
+            </footer>
+        </ul>
+
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     </header>
 
@@ -131,8 +149,6 @@
             </div>
         </section>
     </main>
-
-
 </body>
 
 </html>
