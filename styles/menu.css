@@ -6,14 +6,12 @@
     --textoPrincipal: #181818;
     --textoSecundario: #494949;
 }
-
 body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background-color: #F4E9D8;
     margin: 0;
     padding: 0;
 }
-
 /*navbar pc*/
 .navbar {
     position: relative;
@@ -25,7 +23,6 @@ body {
     justify-content: center;
     font-weight: bold;
 }
-
 .menu {
     display: flex;
     align-items: center;
@@ -36,24 +33,20 @@ body {
     padding: 0;
     width: 100%;
 }
-
 .menu li a {
     font-size: 18px;
     color: var(--corPrincipal);
     text-decoration: none;
     padding: 0 20px;
 }
-
 .menu li:not(:has(.logo)) a:hover {
     color: #913409;
     border-bottom: 2px solid #913409;
 }
-
 .menu li:not(:has(.logo)) a.active {
     font-weight: 500;
     color: #913409;
 }
-
 .menu li:has(.logo) {
     position: absolute;
     top: -34px;
@@ -61,18 +54,15 @@ body {
     transform: translateX(-50%);
     z-index: 10;
 }
-
 .logo {
     width: 120px;
     height: 120px;
     object-fit: contain;
     display: block;
 }
-
 .logo-gap {
     width: 110px;
 }
-
 /* menu celular */
 .menu-toggle {
     display: none;
@@ -84,7 +74,6 @@ body {
     left: 25px;
     z-index: 50;
 }
-
 .logo-nav-mobile {
     display: none;
     position: absolute;
@@ -92,14 +81,12 @@ body {
     transform: translateX(-50%);
     z-index: 50;
 }
-
 .logo-nav-mobile img {
     width: 55px;
     height: 55px;
     object-fit: contain;
     display: block;
 }
-
 .menu-mobile {
     position: fixed;
     top: 0;
@@ -115,11 +102,9 @@ body {
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
-
 .menu-mobile.aberto {
     transform: translateX(0);
 }
-
 .logo-menu-mobile {
     display: flex;
     justify-content: center;
@@ -127,13 +112,11 @@ body {
     padding: 10px 0 20px;
     border-bottom: 1px solid rgba(190, 67, 10, 0.2);
 }
-
 .logo-menu-mobile img {
     width: 90px;
     height: 90px;
     object-fit: contain;
 }
-
 .menu-mobile li a {
     display: block;
     padding: 12px 20px;
@@ -141,12 +124,10 @@ body {
     font-weight: 600;
     text-decoration: none;
 }
-
 .menu-mobile li a:hover {
     color: #913409;
     border-bottom: 2px solid #913409;
 }
-
 .overlay {
     display: none;
     position: fixed;
@@ -154,11 +135,9 @@ body {
     background: rgba(0, 0, 0, 0.4);
     z-index: 100;
 }
-
 .overlay.ativo {
     display: block;
 }
-
 .footernavbar {
     text-align: left;
     color: var(--corPrincipal);
@@ -168,18 +147,203 @@ body {
     left: 20px;
     padding: 20px;
 }
-
 /* media query p celular */
 @media (max-width: 768px) {
     .menu {
         display: none;
     }
-
     .menu-toggle {
         display: block;
     }
-
     .logo-nav-mobile {
         display: block;
+    }
+}
+
+/* rodape */
+.rodape {
+    background: #8b6c5e81;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.10);
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 28px 60px 16px;
+    box-sizing: border-box;
+}
+
+.gradeRodape {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr 1.2fr;
+    gap: 48px;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.logoRodape img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.sloganRodape {
+    font-size: 13px;
+    color: #4a2a10;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 200px;
+}
+
+.tituloColuna {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--corPrincipal);
+    margin: 0 0 10px;
+}
+
+.colunaRodape ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.colunaRodape ul li a {
+    font-size: 13px;
+    color: #4a2a10;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.colunaRodape ul li a:hover {
+    color: var(--corPrincipal);
+}
+
+.contatoRodape p {
+    font-size: 13px;
+    color: #4a2a10;
+    margin: 0 0 6px;
+    line-height: 1.4;
+}
+
+.divisorRodape {
+    border: none;
+    border-top: 1px solid rgba(190, 67, 10, 0.2);
+    width: 100%;
+    margin: 0 0 14px;
+}
+
+.fundoRodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.direitosRodape {
+    font-size: 12px;
+    color: #4a2a10;
+    margin: 0;
+}
+
+.redesRodape {
+    display: flex;
+    gap: 10px;
+}
+
+.linkRede {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: rgba(190, 67, 10, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.linkRede img {
+    width: 35px;
+    height:35px;
+    object-fit: contain;
+}
+
+.linkRede:hover {
+    background: rgba(190, 67, 10, 0.30);
+}
+
+/* celular grande */
+@media (max-width: 768px) {
+    .rodape {
+        padding: 16px 20px 12px;
+    }
+
+    .gradeRodape {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .logoRodape {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logoRodape img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .sloganRodape {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
+    .colunaRodape:has(ul) {
+        display: none;
+    }
+
+    .contatoRodape p {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .divisorRodape {
+        margin: 10px 0;
+    }
+
+    .fundoRodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .direitosRodape {
+        text-align: center;
+        font-size: 11px;
+    }
+
+    .linkRede {
+        width: 40px;
+        height: 40px;
+    }
+
+    .linkRede img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* celular pequeno */
+@media (max-width: 480px) {
+    .logoRodape {
+        flex-direction: row;
+        align-items: center;
     }
 }
