@@ -8,13 +8,6 @@ function enviarFormulario() {
         alert('Por favor, preencha todos os campos antes de enviar.');
         return;
     }
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-}, { threshold: 0.15 });
     const assunto = encodeURIComponent(`Mensagem de ${nome}`);
     const corpo = encodeURIComponent(`Nome: ${nome}\nE-mail: ${email}\n\nMensagem:\n${mensagem}`);
 
