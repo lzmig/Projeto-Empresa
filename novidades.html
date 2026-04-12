@@ -50,7 +50,131 @@
 
         <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
     </header>
+<main>
+        <section class="page-hero">
+            <p class="eyebrow">Fique por dentro</p>
+            <h1>Nossas <em>Novidades</em></h1>
+            <p>Lançamentos, promoções especiais e eventos que preparamos com carinho para você e sua família.</p>
+        </section>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Tudo</button>
+            <button class="filter-btn" data-filter="pratos">🍽️ Novos Pratos</button>
+            <button class="filter-btn" data-filter="promo">🏷️ Promoções</button>
+            <button class="filter-btn" data-filter="eventos">🎉 Eventos</button>
+            <button class="filter-btn" data-filter="dicas">💡 Dicas da Cozinha</button>
+        </div>
+        <div class="section destaque-section">
+            <h2 class="section-title">✦ Em Destaque</h2>
 
+            <div class="featured-card" data-category="pratos">
+                <div class="card-img">
+                    <img src="assets/images/comidas/risoto.jpg" alt="Novo prato: Risoto de Cogumelos" />
+                    <span class="badge nova">🆕 Novo</span>
+                </div>
+                <div class="card-body">
+                    <p class="meta">🍽️ Novo Prato · Abril 2026</p>
+                    <h2>Risoto de <em>Cogumelos</em> & Parmesão</h2>
+                    <p>Preparado com uma seleção de cogumelos frescos — shitake, shimeji e portobello — salteados na
+                        manteiga e combinados com arroz arbóreo cremoso. Uma receita elaborada pelo nosso chef após
+                        meses de pesquisa, disponível a partir desta semana!</p>
+                    <a href="cardapio.html" class="btn-amber">Ver no Cardápio →</a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title">Últimas Notícias</h2>
+
+            <div class="news-grid">
+                <article class="news-card" data-category="promo">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/feijoada.jpg" alt="Feijoada de Sábado" />
+                        <span class="badge promo">🏷️ Promoção</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Promoção ·  a partir de 4 Abr 2026</p>
+                        <h3>Feijoada de Sábado com Desconto Especial</h3>
+                        <p>Todos os sábados de abril, nossa famosa Feijoada Completa sai com 15% de desconto para
+                            pedidos feitos até as 10h pelo WhatsApp. Aproveite!</p>
+                        <a class="card-footer-link" href="contato.html">Fazer pedido →</a>
+                    </div>
+                </article>
+                <article class="news-card" data-category="eventos">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/bolo-chocolate.jpg" alt="Noite de Sobremesas" />
+                        <span class="badge evento">🎉 Evento</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Evento · 18 Abr 2026</p>
+                        <h3>Noite Especial de <em>Sobremesas</em></h3>
+                        <p>No dia 18 de abril faremos uma noite dedicada aos amantes de doce! Degustação de sobremesas
+                            artesanais com sucos naturais incluídos. Vagas limitadas.</p>
+                        <a class="card-footer-link" href="contato.html">Reservar vaga →</a>
+                    </div>
+                </article>
+                <article class="news-card" data-category="dicas">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/peito-frango-grelhado.jpg" alt="Dica: tempero de frango" />
+                        <span class="badge dica">💡 Dica</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Dica da Cozinha · 15 Abr 2026</p>
+                        <h3>O Segredo do Nosso Frango Marinado</h3>
+                        <p>Nossos chefs revelam que o segredo está em marinar o frango por ao menos 12 horas com azeite,
+                            limão taiti e lemon pepper. Experimente em casa!</p>
+                        <a class="card-footer-link" href="#">Ler mais →</a>
+                    </div>
+                </article>
+                <article class="news-card" data-category="pratos">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/escondidinho-de-patinho.jpg" alt="Escondidinho Vegano" />
+                        <span class="badge nova">🆕 Novo</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Novo Prato · 17 Abr 2026</p>
+                        <h3>Escondidinho <em>Vegano</em> de Grão-de-Bico</h3>
+                        <p>Atendendo pedidos dos nossos clientes, lançaremos a versão vegana do nosso clássico
+                            escondidinho! Grão-de-bico temperado coberto com purê de batata doce e cúrcuma.</p>
+                        <a class="card-footer-link" href="cardapio.html">Ver no cardápio →</a>
+                    </div>
+                </article>
+                <article class="news-card" data-category="eventos">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/lasanha.jpg" alt="Almoço em Família" />
+                        <span class="badge evento">🎉 Evento</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Evento · 27 Abr 2026</p>
+                        <h3>Domingo em Família: Almoço Especial</h3>
+                        <p>No último domingo de abril abriremos nosso espaço para um almoço temático com decoração
+                            especial, cardápio exclusivo e atividades para crianças na Área Kids.</p>
+                        <a class="card-footer-link" href="contato.html">Saber mais →</a>
+                    </div>
+                </article>
+                <article class="news-card" data-category="promo">
+                    <div class="card-img-wrap">
+                        <img src="assets/images/comidas/pt-executivo.jpg" alt="Combo Picanha" />
+                        <span class="badge promo">🏷️ Promoção</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="meta">Promoção · 1 Abr 2026</p>
+                        <h3>Combo Picanha + Suco por <em>R$ 59,90</em></h3>
+                        <p>Aproveite nosso favorito da casa — a Picanha ao Alho & Arroz Bi-Bi — com um suco natural à
+                            sua escolha pelo preço especial de R$ 59,90. Válido em abril.</p>
+                        <a class="card-footer-link" href="contato.html">Pedir agora →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+        <div class="section">
+            <div class="promo-banner">
+                <div>
+                    <h2>Receba seu pedido <em>quentinho</em> em casa 🏠</h2>
+                    <p>Entregamos em todo o Maracanã e bairros vizinhos. Fale pelo WhatsApp e faça seu pedido agora!</p>
+                </div>
+                <a href="contato.html" class="btn-white">Pedir pelo WhatsApp</a>
+            </div>
+        </div>
     <footer class="rodape">
         <div class="gradeRodape">
 
