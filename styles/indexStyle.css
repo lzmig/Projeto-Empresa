@@ -14,7 +14,7 @@ body {
     padding: 0;
 }
 
-/* apresentacao*/
+/* apresentacao */
 .containerApresentacao {
     display: flex;
     align-items: center;
@@ -321,7 +321,6 @@ body {
 }
 
 /* animacoes */
-
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -374,4 +373,207 @@ body {
     opacity: 0;
     animation: fadeUp 0.6s ease forwards;
     animation-delay: 1s;
+}
+
+/* tablet */
+@media (max-width: 1024px) {
+    .containerApresentacao {
+        gap: 30px;
+        padding: 40px 20px;
+    }
+
+    .tituloPrincipal {
+        font-size: 40px;
+    }
+
+    .pratos {
+        gap: 60px;
+    }
+
+    .cardDiferencial {
+        width: 420px;
+    }
+}
+
+/* celular grande */
+@media (max-width: 768px) {
+
+/* apresentacao */
+    .containerApresentacao {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .texto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .badge {
+        justify-content: center;
+    }
+
+    .tituloPrincipal {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .textoPrincipal {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .containerBtn {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .imgPrincipal {
+        border-radius: 25px;
+    }
+
+/* pratos */
+    .pratos {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardPrato {
+        align-items: center;
+    }
+
+    .imgPrato {
+        width: 220px;
+    }
+
+    .nomePrato {
+        font-size: 18px;
+    }
+
+    .precoPrato {
+        font-size: 17px;
+    }
+
+/* diferenciais */
+    .diferenciais {
+        height: 380px;
+    }
+
+    .cardDiferencial {
+        width: 340px;
+        height: 300px;
+        padding: 25px;
+        gap: 12px;
+    }
+
+    .tituloDiferencial {
+        font-size: 24px;
+    }
+
+    .descricaoDiferencial {
+        font-size: 14px;
+    }
+
+    .btnCarrossel {
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+}
+
+/* celular pequeno */
+@media (max-width: 480px) {
+
+/* apresentacao */
+    .containerApresentacao {
+        padding: 20px 16px;
+    }
+
+    .tituloPrincipal {
+        font-size: 28px;
+    }
+
+    .textoPrincipal {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .containerBtn {
+        align-items: center;
+    }
+
+    .containerBtn .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+/* pratos */
+    .pratos {
+        gap: 30px;
+    }
+
+    .imgPrato {
+        width: 180px;
+    }
+
+    #btnCardapioCompleto {
+        font-size: 13px;
+        padding: 10px 18px;
+        margin: 24px 16px;
+        text-align: center;
+    }
+
+/* diferenciais */
+    .carrossel {
+        padding: 20px 0 5px;
+    }
+
+    .diferenciais {
+        height: 360px;
+    }
+
+    .cardDiferencial {
+        width: calc(100vw - 48px);
+        height: auto;
+        min-height: 280px;
+        padding: 20px;
+    }
+
+    .tituloDiferencial {
+        font-size: 20px;
+    }
+
+    .descricaoDiferencial {
+        font-size: 13px;
+    }
+
+    .caixaIcone {
+        width: 48px;
+        height: 48px;
+    }
+
+    .iconeDiferencial {
+        width: 36px;
+    }
+
+    .btnCarrossel {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
 }
