@@ -45,4 +45,13 @@ function enviarFormulario() {
 
     window.location.href = `mailto:sabordobairro@gmail.com?subject=${assunto}&body=${corpo}`;
 }
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.animate').forEach(el => observer.observe(el));
 //============================== CONTATO ===================================//
