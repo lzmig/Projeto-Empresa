@@ -1,111 +1,118 @@
 /* deixei essas observações tanto para mim quanto para meus colegas de grupo nao se perderem no codigo===========================================================================================================================*/
 /* estilo da pagina===========================================================================================================================*/
 :root {
-    --corPrincipal: #be430a;
-    --corSecundaria: #c0948057;
-    --fundo: #F4E9D8;
-    --branco: #FFFFFF;
-    --textoPrincipal: #181818;
-    --textoSecundario: #494949;
+  --corPrincipal: #be430a;
+  --corSecundaria: #c0948057;
+  --fundo: #F4E9D8;
+  --branco: #FFFFFF;
+  --textoPrincipal: #181818;
+  --textoSecundario: #494949;
 }
 
 body {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: var(--fundo);
-    margin: 0;
-    padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: var(--fundo);
+  margin: 0;
+  padding: 0;
 }
 
 /* Parte principal da pagina sobre===========================================================================================================================*/
 
-.container-sobre{
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    gap: 40px;
-    display: flex;
+.container-sobre {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  gap: 40px;
+  display: flex;
 }
-.titulodestaque{
-    font-family:'Koh Santepheap' ;
-    font-size: 52px;
-    border-left: 5px solid var(--corPrincipal);
-    border-radius: 4px;
-    padding-left: 5px;
+
+.titulodestaque {
+  font-family: 'Koh Santepheap';
+  font-size: 52px;
+  border-left: 5px solid var(--corPrincipal);
+  border-radius: 4px;
+  padding-left: 5px;
 
 }
-.destaque{
-    font-size: 60px;
-    color: var(--corPrincipal);
-    font-family: "popins";
+
+.destaque {
+  font-size: 60px;
+  color: var(--corPrincipal);
+  font-family: "popins";
 }
-.barra{
-    border-left: red;
+
+.barra {
+  border-left: red;
 }
+
 /* animação do delay===========================================================================================================================*/
-    @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
- /* Parte dos Chefs e nossos nomes===========================================================================================================================*/
-.imgTexto{
-    max-width: 500px;
-    border-radius: 70px;
+@keyframes fadeUp {
+  from {
     opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.2s;
-}
-main{
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.2s;
-}
-.containerchef{
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    gap: 10px;
-    display: flex;
-    background-color:var(--corSecundaria) ;
-    border-radius: 20px;
-    
-    
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.chefs{
-    font-size: 30px;
-    color: var(--textoPrincipal)
+/* Parte dos Chefs e nossos nomes===========================================================================================================================*/
+.imgTexto {
+  max-width: 500px;
+  border-radius: 70px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+main {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.containerchef {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  gap: 10px;
+  display: flex;
+  background-color: var(--corSecundaria);
+  border-radius: 20px;
+
+
+}
+
+.chefs {
+  font-size: 30px;
+  color: var(--textoPrincipal)
 }
 
 .listachefs {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.destaquechef{
-    font-size: 30px;
-    color: var(--corPrincipal);
+.destaquechef {
+  font-size: 30px;
+  color: var(--corPrincipal);
 }
 
-.imgchef{
-    max-width: 500px;
-    border-radius: 70px;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
-    animation-delay: 0.2s;
+.imgchef {
+  max-width: 500px;
+  border-radius: 70px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.2s;
 }
+
 /* tudo da parte do mapa===========================================================================================================================*/
 
 .containerloc {
@@ -123,21 +130,22 @@ main{
   border-radius: 10px;
   width: 50%;
   height: 350px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
- 
-.tituloloc{
-    margin-top: 100px;
-    font-family:'Koh Santepheap' ;
-    font-size: 52px;
-    color: var(--textoPrincipal);
-    border-left: 5px solid var(--corPrincipal) ;
-    border-radius: 4px;
-    padding-left: 5px;
+
+.tituloloc {
+  margin-top: 100px;
+  font-family: 'Koh Santepheap';
+  font-size: 52px;
+  color: var(--textoPrincipal);
+  border-left: 5px solid var(--corPrincipal);
+  border-radius: 4px;
+  padding-left: 5px;
 }
-.subtext-loc{
-    font-size: 30px;
-    color: var(--textoPrincipal);
+
+.subtext-loc {
+  font-size: 30px;
+  color: var(--textoPrincipal);
 }
 
 .container-slide {
@@ -198,7 +206,7 @@ main{
 }
 
 
- /* formatação para celular============================================================================================================================*/
+/* formatação para celular============================================================================================================================*/
 
 
 @media (max-width: 768px) {
