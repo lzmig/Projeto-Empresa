@@ -484,7 +484,7 @@ figcaption {
     display: flex;
     justify-content: space-around;
    
-   
+    border: none;
     background-color: #d3c4aa;
     align-items: center;
     padding: 5px 0px;
@@ -578,7 +578,7 @@ figcaption {
 
 .footer-links {
     display: flex;
-    gap: 25px; /* Espaço entre os links */
+    gap: 25px; 
 }
 
 .footer-links a {
@@ -590,7 +590,7 @@ figcaption {
 }
 
 .footer-links a:hover {
-    color: #c05a32; /* Cor ao passar o mouse */
+    color: #c05a32; 
 }
 
 
@@ -650,7 +650,7 @@ dialog::backdrop {
     width: 100%;
     min-height: 500px;
     min-width: 400px;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
     object-fit: cover;
     object-position: center;
@@ -703,11 +703,11 @@ dialog::backdrop {
     display: inline-block;
     justify-content: center;
     margin-top: 15px;
-    background-color: #f34317;
+    background-color: #f15e39;
     border: none;
     padding: 10px 20px;
     border-radius: 20px;
-    color: #dbcdc4;
+    color: #f7f2ef;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
@@ -716,8 +716,8 @@ dialog::backdrop {
 }
 
 .btn-comprarModal:hover {
-    background-color: rgb(165, 7, 2);
-    color: #d37121;
+    background-color: rgb(197, 43, 38);
+    color: #ecded3;
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
@@ -727,6 +727,79 @@ dialog::backdrop {
     display: flex;
     justify-content:center;
 }
+
+
+
+/* =====================popup picanha================== */
+
+
+#lista-adicionais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+
+.item-adicional {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease; 
+    cursor: pointer;
+}
+
+
+.item-adicional:hover {
+    background-color: #fff4e6; 
+    border-color: #e67e22;
+    transform: translateX(5px); 
+}
+
+
+.item-adicional input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+    accent-color: #e67e22; 
+}
+
+
+.item-adicional label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #333;
+    font-weight: 500;
+}
+
+
+#total-pedido {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+}
+
+#picanha-foto {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 
 
 @media (max-width: 768px) {
