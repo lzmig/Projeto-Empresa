@@ -129,6 +129,12 @@ body {
 }
 
 /* pratos */
+.linkPrato {
+    text-decoration: none;
+    color: var(--textoPrincipal);
+    
+}
+
 .containerPratos {
     display: flex;
     flex-direction: column;

@@ -13,11 +13,13 @@ fetch("assets/cardapio.json")
 
         pratosSorteados.forEach(prato => {
             container.innerHTML += `
-            <div class="cardPrato">
-                <img class="imgPrato" src="${prato.imagem}" alt="${prato.nome}">
-                <p class="nomePrato">${prato.nome}</p>
-                <p class="precoPrato">R$ ${prato.preco.toFixed(2)}</p>
+            <a href="cardapio.html" class="linkPrato">
+                <div class="cardPrato">
+                    <img class="imgPrato" src="${prato.imagem}" alt="${prato.nome}">
+                    <p class="nomePrato">${prato.nome}</p>
+                    <p class="precoPrato">R$ ${prato.preco.toFixed(2)}</p>
                 </div>
+            </a>
         `;
         });
 
