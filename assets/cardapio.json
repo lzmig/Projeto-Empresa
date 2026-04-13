@@ -1,37 +1,120 @@
 [
     {
         "id": 1,
-        "nome": "Prato Feito Tradicional",
-        "descricao": "Arroz, feijão, bife grelhado, batata frita e salada.",
-        "preco": 24.9,
-        "imagem": "assets/images/comidas/imgPrincipal.png"
+        "categoria": "marmita-fit",
+        "nome": "Frango Grelhado com Ervas",
+        "descricao": "Peito de frango marinado, batata doce assada e mix de legumes no vapor. Rico em fibras.",
+        "preco": 25.00,
+        "imagem": "assets/images/comidas/peito-frango-grelhado.jpg",
+        "modal": "modal-fangro"
     },
     {
         "id": 2,
-        "nome": "Frango Caseiro",
-        "descricao": "Frango dourado, arroz soltinho, feijão e farofa.",
-        "preco": 22.9,
-        "imagem": "assets/images/comidas/imgPrincipal.png"
+        "categoria": "marmita-fit",
+        "nome": "Salmão com Alecrim",
+        "descricao": "Filé de salmão grelhado com alecrim, quinoa real, aspargos salteados no azeite.",
+        "preco": 35.00,
+        "imagem": "assets/images/comidas/Salmao-Assado-com-Alecrim.JPG",
+        "modal": "modal-salmao"
     },
     {
         "id": 3,
-        "nome": "Macarrão da Casa",
-        "descricao": "Macarrão ao molho caseiro com carne moída e queijo ralado.",
-        "preco": 19.9,
-        "imagem": "assets/images/comidas/imgPrincipal.png"
+        "categoria": "marmita-fit",
+        "nome": "Escondidinho de Patinho",
+        "descricao": "Carne moída de patinho refogada com temperos, coberta com purê de batata doce.",
+        "preco": 28.00,
+        "imagem": "assets/images/comidas/escondidinho-de-patinho.jpg",
+        "modal": "modal-patinho"
     },
     {
         "id": 4,
+        "categoria": "tradicional",
         "nome": "Feijoada Completa",
-        "descricao": "Feijoada com carnes selecionadas, arroz, couve e laranja.",
-        "preco": 29.9,
-        "imagem": "assets/images/comidas/imgPrincipal.png"
+        "descricao": "Arroz soltinho, feijoada rica em carnes nobres, couve refogada e farofa da casa.",
+        "preco": 29.90,
+        "imagem": "assets/images/comidas/feijoada.jpg",
+        "modal": "modal-feijoada"
     },
     {
         "id": 5,
-        "nome": "Omelete Recheado",
-        "descricao": "Omelete com queijo, presunto e temperos caseiros.",
-        "preco": 17.9,
-        "imagem": "assets/images/comidas/imgPrincipal.png"
+        "categoria": "tradicional",
+        "nome": "Bife Acebolado Clássico",
+        "descricao": "Bife de alcatra macio, cebolas caramelizadas, arroz, feijão carioquinha e batatas fritas.",
+        "preco": 27.50,
+        "imagem": "assets/images/comidas/bife-acebolado.jpg",
+        "modal": "modal-bife"
+    },
+    {
+        "id": 6,
+        "categoria": "tradicional",
+        "nome": "Lasanha de Vovó",
+        "descricao": "Massa artesanal, molho bolonhesa apurado por 4 horas e muito queijo gratinado.",
+        "preco": 32.00,
+        "imagem": "assets/images/comidas/lasanha.jpg",
+        "modal": "modal-lasanha"
+    },
+    {
+        "id": 7,
+        "categoria": "executivo",
+        "nome": "Picanha ao Alho & Arroz Bi-Bi",
+        "descricao": "Picanha grelhada na brasa com alho confitado, arroz com ovos, bacon e batata palha artesanal.",
+        "preco": 54.90,
+        "imagem": "assets/images/comidas/pt-executivo.jpg",
+        "modal": "modal-picanha",
+        "destaque": true
+    },
+    {
+        "id": 8,
+        "categoria": "executivo",
+        "nome": "Risoto de Camarão",
+        "descricao": "Risoto cremoso com camarões frescos, alho e especiarias. Servido com queijo parmesão gratinado.",
+        "preco": 45.00,
+        "imagem": "assets/images/comidas/risoto.jpg",
+        "modal": "modal-risoto"
+    },
+    {
+        "id": 9,
+        "categoria": "executivo",
+        "nome": "Medalhão ao Molho Madeira",
+        "descricao": "Filet mignon em medalhões, molho madeira artesanal e purê de batatas com toque de queijo gruyère.",
+        "preco": 49.90,
+        "imagem": "assets/images/comidas/molho-madeira.jpg",
+        "modal": "modal-molho"
+    },
+    {
+        "id": 10,
+        "categoria": "sobremesa",
+        "nome": "Bolo de Chocolate",
+        "descricao": "",
+        "preco": 15.00,
+        "imagem": "assets/images/comidas/bolo-chocolate.jpg",
+        "modal": "modal-bolo"
+    },
+    {
+        "id": 11,
+        "categoria": "sobremesa",
+        "nome": "Pudim de Leite",
+        "descricao": "",
+        "preco": 12.00,
+        "imagem": "assets/images/comidas/pudim-leite.jpg",
+        "modal": "modal-pudim"
+    },
+    {
+        "id": 12,
+        "categoria": "sobremesa",
+        "nome": "Cheesecake de Frutas Vermelhas",
+        "descricao": "",
+        "preco": 18.00,
+        "imagem": "assets/images/comidas/cheesecake-frutas.jpg",
+        "modal": "modal-cheesecake"
+    },
+    {
+        "id": 13,
+        "categoria": "sobremesa",
+        "nome": "Frutas da Estação",
+        "descricao": "",
+        "preco": 9.80,
+        "imagem": "assets/images/comidas/frutas.jpg",
+        "modal": "modal-frutas"
     }
 ]
