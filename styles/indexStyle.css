@@ -69,7 +69,7 @@ body {
     margin-top: 0;
 }
 
-#destaque {
+.destaque {
     font-style: italic;
     color: var(--corPrincipal);
     font-weight: 700;

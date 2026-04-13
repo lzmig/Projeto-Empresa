@@ -35,7 +35,7 @@ body {
     padding-left: 5px;
 
 }
-#destaque{
+.destaque{
     font-size: 60px;
     color: #be430a;
     font-family: "popins";
